@@ -9,7 +9,7 @@ export function SelectCity({ onSelect }) {
   const [search, setSearch] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  async function getCities(name) {
+  async function getCities(name: string) {
     setIsLoading(true);
 
     const response = await getCityByNameService(name);
