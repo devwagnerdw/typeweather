@@ -36,7 +36,7 @@ export function SelectCity({ onSelect }:Props) {
       <Input
         isLoading={isLoading}
         placeholder="Buscar local"
-        onChange={(e:ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
+        onChange={(e) => setSearch(e.target.value)}
       />
 
       <div className='select-list'>
