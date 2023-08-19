@@ -1,18 +1,26 @@
 import { api } from "./api";
 
-export async function getCityByNameService(name) {
+
+export interface CityProps {
+  id: string;
+  name: string;
+  latitude: number;
+  longitude: number;
+}
+
+export async function getCityByNameService(name: string) {
   try {
     const { data } = await api.get(`/weather?q=${name}`);
 
-    const city = {
+    const city: CityProps = {
       id: data.id,
       name: data.sys.country ? `${data.name}, ${data.sys.country}` : data.name,
       longitude: data.coord.lon,
       latitude: data.coord.lat,
     };
 
-    return city;
+    return [city];
   } catch (error) {
-    return null;
+    return [];
   }
 }
