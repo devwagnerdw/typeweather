@@ -5,10 +5,12 @@ import { Logo } from '../Logo';
 import { SelectCity } from '../SelectCity';
 import { isDayTime } from '../../utils/isDayTime';
 import { WeatherResponseProps } from '../../services/getWeatherByCity';
+import { CityProps } from '../../services/getCityByNameService';
 
 interface Props {
   city: string;
   weather: WeatherResponseProps;
+  onSearchValue: (value: CityProps) => void;
 }
 
 export function Today({ city, weather, onSearchValue }: Props) {
