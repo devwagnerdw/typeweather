@@ -25,7 +25,7 @@ export interface WeatherAPIResponseProps {
       speed: number;
     },
     weather: {
-      main: string;
+      main: 'Clouds' | 'Rain' | 'Clear' | 'Snow';
       description: string;
     }[];
   }[];
