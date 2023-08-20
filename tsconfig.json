@@ -6,7 +6,7 @@
       "DOM.Iterable",
       "ESNext"
     ], // Especifica as bibliotecas que devem ser incluídas durante a compilação. 
-    "allowJs": true, // Desabilita a compilação de arquivos JavaScript junto com os arquivos TypeScript. 
+    "allowJs": false, // Desabilita a compilação de arquivos JavaScript junto com os arquivos TypeScript. 
     "skipLibCheck": true, // Ignora a verificação de bibliotecas de definição de tipo durante a compilação. 
     "esModuleInterop": false, // Ocódigo não irá usar a forma de importação/exportação de módulos ES padrão.
     "allowSyntheticDefaultImports": true, // Permite o uso de importações sintéticas de valores padrão em módulos TypeScript, mesmo que o módulo não exporte explicitamente um valor padrão.
